@@ -8,11 +8,11 @@
 		"../scss/_components.scss"
 	],
 	"sourcesContent": [
-		"@import 'base';\r\n@import 'layout';\r\n@import 'components';\r\n\r\nbody {\r\n  background-color: blueviolet;\r\n}\r\n",
-		"",
-		"",
-		""
+		"@import 'base';\r\n@import 'layout';\r\n@import 'components';\r\n",
+		"$color-dark: #262626;\n$color-black: #000;\n$color-primary: #e67e22;\n$color-secondary: #bbb;\n\n$font-dancingScript: 'Dancing Script', cursive;\n$font-josefinSans: 'Josefin Sans', sans-serif;\n$font-nunito: 'Nunito', sans-serif;\n\n@mixin flexLayout {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n@mixin textStyles($transform: uppercase) {\n  font-weight: 500;\n  letter-spacing: 2px;\n  //   text-transform: $transform;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  background-color: $color-dark;\n}\n",
+		".header {\n  width: 100%;\n  height: 100vh;\n  position: relative;\n  background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6)),\n    url(../images/bg.jpeg) center no-repeat;\n  background-size: cover;\n\n  .brand {\n    position: absolute;\n    top: 15%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    display: flex;\n    align-items: center;\n  }\n}\n",
+		".logo {\n  font-size: 70px;\n  color: $color-primary;\n  width: 110px;\n  height: 110px;\n  border: 3px solid $color-primary;\n  border-radius: 50%;\n  margin-right: 20px;\n  text-decoration: none;\n  @include flexLayout;\n}\n\n.main-name {\n  font-family: $font-nunito;\n  font-size: 50px;\n  color: $color-secondary;\n  @include textStyles;\n}\n\n.sub-name {\n  font-family: $font-josefinSans;\n  font-size: 18px;\n  color: $color-secondary;\n  text-align: center;\n  @include textStyles;\n}\n"
 	],
 	"names": [],
-	"mappings": "AAIA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,UAAU;CAC7B"
+	"mappings": "ACqBA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,IAAI,CAAC;EACH,gBAAgB,EA3BL,OAAO;CA4BnB;;AC5BD,AAAA,OAAO,CAAC;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,uDAAiE,EAC3E,sBAAsB,CAAC,MAAM,CAAC,SAAS;EACzC,eAAe,EAAE,KAAK;CAUvB;;AAhBD,AAQE,OARK,CAQL,MAAM,CAAC;EACL,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,qBAAqB;EAChC,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;CACpB;;ACfH,AAAA,KAAK,CAAC;EACJ,SAAS,EAAE,IAAI;EACf,KAAK,EFAS,OAAO;EECrB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,GAAG,CAAC,KAAK,CFHH,OAAO;EEIrB,aAAa,EAAE,GAAG;EAClB,YAAY,EAAE,IAAI;EAClB,eAAe,EAAE,IAAI;EFErB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CEFpB;;AAED,AAAA,UAAU,CAAC;EACT,WAAW,EFNC,QAAQ,EAAE,UAAU;EEOhC,SAAS,EAAE,IAAI;EACf,KAAK,EFZW,IAAI;EAapB,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,GAAG;CEApB;;AAED,AAAA,SAAS,CAAC;EACR,WAAW,EFdM,cAAc,EAAE,UAAU;EEe3C,SAAS,EAAE,IAAI;EACf,KAAK,EFnBW,IAAI;EEoBpB,UAAU,EAAE,MAAM;EFPlB,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,GAAG;CEQpB"
 }
