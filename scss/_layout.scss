@@ -14,7 +14,7 @@
 
   &-banner {
     text-align: center;
-    @include centering(50%);
+    @include centering(60%);
   }
 }
 
@@ -63,5 +63,12 @@
         padding-left: 50px;
       }
     }
+  }
+}
+
+.gallery {
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
