@@ -16,7 +16,14 @@ $font-nunito: 'Nunito', sans-serif;
 @mixin textStyles($transform: uppercase) {
   font-weight: 500;
   letter-spacing: 2px;
-  //   text-transform: $transform;
+  text-transform: $transform;
+}
+
+@mixin centering($topValue) {
+  position: absolute;
+  top: $topValue;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 * {
