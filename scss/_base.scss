@@ -14,7 +14,7 @@ $font-nunito: 'Nunito', sans-serif;
 }
 
 @mixin textStyles($transform: uppercase) {
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 2px;
   text-transform: $transform;
 }
